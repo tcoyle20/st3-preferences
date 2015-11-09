@@ -1,0 +1,26 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AutoFileName",
+		"Bootstrap 3 Snippets",
+		"BracketHighlighter",
+		"DashDoc",
+		"DocBlockr",
+		"Emmet",
+		"HTML-CSS-JS Prettify",
+		"jQuery",
+		"LESS",
+		"Package Control",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-htmlhint",
+		"SublimeLinter-csslint",
+		"SublimeLinter-jshint",
+		"SublimeLinter-phplint"
+	]
+}
