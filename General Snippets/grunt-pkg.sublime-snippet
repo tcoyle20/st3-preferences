@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+{
+  "name": "Project-Name",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  },
+  "comment": "npm install, npm install -g grunt-cli"
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>grunt-pkg</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

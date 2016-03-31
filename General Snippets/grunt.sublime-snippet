@@ -1,0 +1,56 @@
+<snippet>
+	<content><![CDATA[
+module.exports = function(grunt) {
+
+  grunt.initConfig({
+
+    less: {
+      development: {
+        options: {
+          paths: ["less"]
+        },
+        files: {
+          "../css/style.css": "less/style.less",
+          "../css/ie.css": "less/ie.less",
+          "../css/login.css": "less/login.less"
+        }
+      },
+      production: {
+        options: {
+          paths: ["less"],
+          compress: true,
+          plugins: [
+            new (require('less-plugin-autoprefix'))({browsers: ["last 2 versions"]}),
+            new (require('less-plugin-clean-css'))()
+          ]
+        },
+        files: {
+          "../css/style.min.css": "less/style.less",
+          "../css/ie.min.css": "less/ie.less",
+          "../css/login.min.css": "less/login.less"
+        }
+      }
+    },
+    watch: {
+      css: {
+        files: 'less/*.less',
+        tasks: ['less'],
+        options: {
+          livereload: true,
+        },
+      },
+    },
+  });
+
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+  grunt.registerTask('default', ['watch']);
+
+};
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>grunt</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
